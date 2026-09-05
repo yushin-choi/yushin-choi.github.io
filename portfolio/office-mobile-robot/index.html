@@ -1,0 +1,446 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+
+<meta charset="utf-8">
+
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Development of Office Assistance Services Using Mobile Robots - Yushin Choi</title>
+
+
+
+<meta name="description" content="Firebase-based coordination of multiple Temi robots, including real-time communication and nearest-robot task allocation for office assistance services.">
+
+
+
+
+
+
+
+  <link rel="canonical" href="http://localhost:4001/portfolio/office-mobile-robot/">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Yushin Choi",
+      "url" : "http://localhost:4001",
+      "sameAs" : ["https://github.com/yushin-choi"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+<!-- Open Graph protocol data (https://ogp.me/), used by social media -->
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Yushin Choi"> 
+<meta property="og:title" content="Development of Office Assistance Services Using Mobile Robots">
+
+  <meta property="og:type" content="website">
+
+
+  <meta property="og:description" name="description" content="Firebase-based coordination of multiple Temi robots, including real-time communication and nearest-robot task allocation for office assistance services.">
+
+
+  <meta property="og:url" content="http://localhost:4001/portfolio/office-mobile-robot/">
+
+
+
+  <meta property="og:image" content="/assets/images/projects/office-mobile-robot/teaser.jpg">
+
+<!-- end Open Graph protocol -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Yushin Choi Feed">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+    
+
+
+<!-- start custom head snippets -->
+
+<!-- Support for Academicons -->
+<link rel="stylesheet" href="/assets/css/academicons.css"/>
+
+<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192"/>
+<link rel="manifest" href="/images/manifest.json"/>
+<link rel="icon" href="/images/favicon.ico"/>
+<meta name="theme-color" content="#ffffff"/>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><span class="navicon"></span></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg persist ">
+            <a href="/">Yushin Choi</a>
+          </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="/">About</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="/publications/">Publications</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="/projects/">Projects</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item ">
+              <a href="/assets/pdf/CV_Yushin_Choi.pdf">CV</a>
+            </li>
+          
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <button type="button" aria-label="Toggle color theme" title="Toggle color theme"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i></button>
+          </li>
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="/images/YushinChoi.jpeg" class="author__avatar" alt="Yushin Choi"  fetchpriority="high" />
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Yushin Choi</h3>
+    
+    <p class="author__bio">Robotics Researcher · Whole-Body Control & Robot Learning</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
+      
+        <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>Republic of Korea</li>
+      
+      
+        <li class="author__desktop"><a href="https://www.ligdefenseaerospace.com/eng/main.do" target="_blank" rel="noopener"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>LIG Defense & Aerospace</a></li>
+      
+      
+      
+        <li><a href="mailto:yushin.choi7@gmail.com"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+      
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
+      
+            
+      
+            
+      
+      
+                              
+      
+      
+      
+      
+      
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+        <li><a href="https://github.com/yushin-choi"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>
+      
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
+              
+      
+      
+            
+      
+                  
+                  
+      
+            
+            
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+              
+      
+                      
+      
+      
+            
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Development of Office Assistance Services Using Mobile Robots">
+    <meta itemprop="description" content="Firebase-based coordination of multiple Temi robots, including real-time communication and nearest-robot task allocation for office assistance services.">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Development of Office Assistance Services Using Mobile Robots
+</h1>
+          
+        
+        
+        
+          <p class="page__date">
+            <strong>Undergraduate Project Assistant</strong> &middot; Mar. 2022 – Feb. 2023
+            <br>Hanyang University
+          </p>
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <h2 id="overview">Overview</h2>
+
+<p>This undergraduate project developed a multi-robot office assistance system using Temi mobile robots and a shared Firebase backend.</p>
+
+<p><img src="/assets/images/projects/office-mobile-robot/teaser.jpg" alt="Temi mobile robots adapted for office assistance" /></p>
+
+<p><small>Multiple Temi robots operating in the office-assistance test environment.</small></p>
+
+<h2 id="system">System</h2>
+
+<p>The system connected multiple Temi robots, environmental sensors, and user-facing services through Firebase Realtime Database and the Temi SDK. It supported document delivery with RFID-based sender and recipient checks, visitor guidance, office-information notices, air-quality monitoring, and nearest-robot dispatch.</p>
+
+<h2 id="contributions">Contributions</h2>
+
+<ul>
+  <li>Designed the end-to-end coordination algorithm for multiple mobile robots</li>
+  <li>Implemented Firebase-based real-time communication between the robots and service backend</li>
+  <li>Developed nearest-robot task allocation for dispatching office assistance requests</li>
+  <li>Consolidated the class project codebase and technical materials for continued use after the course</li>
+</ul>
+
+<h2 id="demonstrations">Demonstrations</h2>
+
+<h3 id="multi-robot-coordination">Multi-Robot Coordination</h3>
+
+<video controls="" playsinline="" preload="metadata" poster="/assets/images/projects/office-mobile-robot/teaser.jpg" style="width: 100%; height: auto;">
+  <source src="/assets/media/projects/office-mobile-robot/multi-robot-coordination.mp4" type="video/mp4" />
+  Your browser does not support embedded MP4 video.
+</video>
+
+<p><small>Coordinated operation of multiple Temi robots through the shared service backend.</small></p>
+
+<h3 id="rfid-verified-document-delivery">RFID-Verified Document Delivery</h3>
+
+<video controls="" playsinline="" preload="metadata" poster="/assets/images/projects/office-mobile-robot/document-delivery.jpg" style="width: 100%; height: auto;">
+  <source src="/assets/media/projects/office-mobile-robot/document-delivery.mp4" type="video/mp4" />
+  Your browser does not support embedded MP4 video.
+</video>
+
+<p><small>End-to-end document-delivery workflow with robot dispatch and RFID-based handoff verification.</small></p>
+
+<h2 id="award">Award</h2>
+
+<p>The project received the <strong>Undergraduate Paper Award</strong> at the 2022 ICROS Annual Conference.</p>
+
+<p><a href="/publication/2022-icros-office-mobile-robot/" class="btn btn--primary">View the conference paper</a>
+<a href="http://2022.icros.org/?page_id=61" class="btn">Award announcement</a></p>
+
+
+        
+        
+        
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+
+
+      </footer>
+
+      
+
+      
+
+
+
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/portfolio/wbc-quadruped-balancing/" class="pagination--pager" title="Whole-Body Control for Balancing a Quadruped Mobile Manipulator
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- Support for MatJax -->
+<script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+
+<!-- Support for Mermaid -->
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({startOnLoad:true, theme:'default'});
+    await mermaid.run({querySelector:'code.language-mermaid'});
+</script>
+
+<!-- end custom footer snippets -->
+
+        
+
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://github.com/yushin-choi"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">
+  &copy; 2026 Yushin Choi.
+</div>
+
+      </footer>
+    </div>
+
+    <script type="module" src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

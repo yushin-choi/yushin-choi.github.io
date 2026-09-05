@@ -1,0 +1,19 @@
+{
+	"name": "Yushin Choi",
+	"short_name": "Yushin Choi",
+	"description": "Robotics researcher working on humanoid whole-body control, generative motion models, and learning-based loco-manipulation.",
+	"start_url": "/",
+	"lang": "en-US",
+	"icons": [
+		{
+			"src": "/images/favicon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/favicon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
